@@ -16,7 +16,7 @@ html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: url("http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/bossBG.png") no-repeat;
+    background: url("./hitBadGame/bossBG.png") no-repeat;
     background-size: 100% 100%;
 }
 .gameMark{
@@ -64,7 +64,7 @@ html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: url("http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/startbg.png") no-repeat;
+    background: url("./hitBadGame/startbg.png") no-repeat;
     background-size: 100% 100%;
 }
 .gameStart .startBtn{
@@ -297,7 +297,7 @@ header{
     position: relative;
     width: 2rem;
     height: .53rem;
-    background: url("http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/pit.png") no-repeat;
+    background: url("./hitBadGame/pit.png") no-repeat;
     background-size: 100% 100%;
 }
 .bad div span{
@@ -423,7 +423,7 @@ footer{
     align-items: center;
     width: 2rem;
     height: .34rem;
-    background: url("http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/planbg.png") no-repeat;
+    background: url("./hitBadGame/planbg.png") no-repeat;
     background-size: 100% 100%;
 }
 /*boss显示部分*/
@@ -458,7 +458,7 @@ footer{
     left: .04rem;
     width: 7.42rem;
     height: 2.62rem;
-    background: url("http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/bossPit.png") no-repeat;
+    background: url("./hitBadGame/bossPit.png") no-repeat;
     background-size: 100% 100%;
 }
 .boss-box .boss{

@@ -23,7 +23,7 @@ function onTime() {
         if (imgNum == 4) {
             $('.timeMark').find('img').css('width','4.76rem');
         }
-        $('.timeMark').find('img').attr('src','http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/'+imgNum+'.png');
+        $('.timeMark').find('img').attr('src','./hitBadGame/'+imgNum+'.png');
         if(imgNum > 4){
             $('.timeMark').hide();
             clearInterval(imgTime);
@@ -59,7 +59,7 @@ function personShow() {
     var imgArr = [6,5,6,7,6,5,7,6,6];
     var images = parseInt(Math.random()*9);
     var imageData = parseInt(Math.random()*3+5);
-    var that = $('.bad div').eq(images).find('img').attr('src',"http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/" + imgArr[imageData] + ".png");
+    var that = $('.bad div').eq(images).find('img').attr('src',"./hitBadGame/" + imgArr[imageData] + ".png");
     that.show();
     if (imgArr[imageData] == 5) {
         that.prev().text('-100');
@@ -164,7 +164,7 @@ ws.onmessage = function(e){
         onTime();
         /*点击人物锤子砸下去*/
         $('.bad img').bind('touchstart',function () {
-            if ($(this).attr('src') == "http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/6.png") {
+            if ($(this).attr('src') == "./hitBadGame/6.png") {
                 $(this).prev().show();
                 var that = this;
                 setTimeout(function () {
@@ -177,7 +177,7 @@ ws.onmessage = function(e){
                 $('.in-plan').animate({
                     left:"-" + index +　'%'
                 },100);
-            }if ($(this).attr('src') == "http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/7.png") {
+            }if ($(this).attr('src') == "./hitBadGame/7.png") {
                 $(this).prev().show();
                 var that = this;
                 setTimeout(function () {
@@ -191,7 +191,7 @@ ws.onmessage = function(e){
                     left:"-" + index +　'%'
                 },100);
             }
-            if ($(this).attr('src') == "http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/5.png") {
+            if ($(this).attr('src') == "./hitBadGame/5.png") {
                 $(this).prev().show();
                 var that = this;
                 setTimeout(function () {
@@ -214,10 +214,10 @@ ws.onmessage = function(e){
                     'width':'.56rem',
                     'height':'1rem'
                 });
-                $('.starBlink').attr('src',"http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/stargf.gif");
+                $('.starBlink').attr('src',"./hitBadGame/stargf.gif");
                 /*starTime = setInterval(function () {
                     starNum++;
-                    $('.starBlink').attr('src',"http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/10" + starNum + ".png");
+                    $('.starBlink').attr('src',"./hitBadGame/10" + starNum + ".png");
                     if (starNum == 14) {
                         starNum = 1;
                     }
@@ -228,7 +228,7 @@ ws.onmessage = function(e){
                     bossShowTime--;
                     if (bossShowTime == 0) {   //5秒后boss消失
                         window.clearInterval(starTime);
-                        $('.starBlink').attr('src',"http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/star.png");
+                        $('.starBlink').attr('src',"./hitBadGame/star.png");
                         $('.starBlink').css({
                             'width':'.56rem',
                             'height':'.54rem'
@@ -248,9 +248,9 @@ ws.onmessage = function(e){
                     }
                 },1000)
                 $('.boss').bind('touchstart',function () {
-                    $(this).attr('src',"http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/333.png");
+                    $(this).attr('src',"./hitBadGame/333.png");
                     setTimeout(function () {
-                        $('.boss').attr('src',"http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/boss.png");
+                        $('.boss').attr('src',"./hitBadGame/boss.png");
                     },100);
                     clickNumUp();
                     linkPoint++;
@@ -313,11 +313,11 @@ ws.onmessage = function(e){
     if (_type == 4) {
         if (_data.troops == _troops) {
             $('.game-winAndfall').show();
-            $('.game-winAndfall .winOrfall').attr('src','http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/win.png');
+            $('.game-winAndfall .winOrfall').attr('src','./hitBadGame/win.png');
         }else{
             $('.game-winAndfall').show();
             $('.over-award span span').text('x1');
-            $('.game-winAndfall .winOrfall').attr('src','http://doudoujiaoyou.oss-cn-beijing.aliyuncs.com/h5/activity/hitBadGame/fall.png');
+            $('.game-winAndfall .winOrfall').attr('src','./hitBadGame/fall.png');
         }
         ws.close();
     }
